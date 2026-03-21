@@ -2,6 +2,14 @@
 <head>
 	<meta http-equiv="refresh" content="60">
 	<title>Homeassistant Interactive ePaper</title>
+	<style>
+        .refresh-button {
+            font-size: 1.5em;
+            text-decoration: none;
+            color: black;
+            padding: 4px;
+        }
+    </style>
 </head>
 <body>
 	<h1>{{title}}</h1>
@@ -9,5 +17,6 @@
 	<p>Error: {{error_message}}</p>
 	<p>Stack trace:</p>
 	<pre>{{ stacktrace | e }}</pre>
-	Refreshing in 60s...
+	<p>Refreshing in 60s...</p>
+	<center><button onclick="location.reload()" class="refresh-button">Refresh Now</button></center>
 </body>
