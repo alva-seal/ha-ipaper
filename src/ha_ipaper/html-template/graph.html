@@ -36,7 +36,10 @@
     </div>
 
     <div class="graph-container">
-        <h3>{{ request.query_params.get("sensor") }}</h3>
+        <h3><script>
+            const title = "{{ request.query_params.get('sensor') }}".replace(/_/g, " ");
+            document.write(title.charAt(0).toUpperCase() + title.slice(1));
+        </script></h3>
 
         <!-- Static image or server-rendered SVG -->
         
