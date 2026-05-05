@@ -21,7 +21,7 @@ class HomeAssistantService:
                 "get_forecasts",
                 entity_id="weather.forecast_home",
                 type="daily",
-            )["weather.home"]["forecast"]
+            )["weather.forecast_home"]["forecast"]
             _LOGGER.debug("Fetched %d entities from Home Assistant", len(entities))
             return entities
 
