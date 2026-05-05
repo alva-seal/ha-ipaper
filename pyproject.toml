@@ -13,7 +13,7 @@ keywords = ["home-assistant", "epaper", "dashboard"]
 
 dependencies = [
   "PyYAML",
-  "homeassistant_api",
+  "homeassistant_api>=6.0.0",
   "fastapi",
   "uvicorn[standard]",
   "jinja2",
