@@ -19,7 +19,7 @@ class HomeAssistantService:
             entities["weather_forecast"] = client.trigger_service_with_response(
                 "weather",
                 "get_forecasts",
-                entity_id="weather.home",
+                entity_id="weather.forecast_home",
                 type="daily",
             )["weather.home"]["forecast"]
             _LOGGER.debug("Fetched %d entities from Home Assistant", len(entities))
