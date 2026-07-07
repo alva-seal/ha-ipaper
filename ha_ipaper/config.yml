@@ -2,6 +2,7 @@ name: "HA-IPaper Add-on"
 version: "0.0.2"
 slug: "ha_ipaper"
 description: "Interactive e-Paper Dashboard for Home Assistant"
+panel_icon: mdi:puzzle
 arch:
   - aarch64
   - amd64
