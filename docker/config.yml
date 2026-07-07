@@ -1,13 +1,22 @@
-name: "ha-iapaper"
+name: "HA-IPaper Add-on"
 version: "1.0.0"
-slug: "ha-iapaper
-description: "Home Assistant Interactive e-Paper Dashboard "
+slug: "ha_ipaper"
+description: "Interactive e-Paper Dashboard for Home Assistant"
 arch:
   - aarch64
   - amd64
   - armv7
 init: false
-options: {}
-schema: {}
+map:
+  - config:rw
 ports:
   8081/tcp: 6969
+options:
+  timezone: "Europe/London"
+  homeassistant_url: "http://supervisor/core"
+  homeassistant_token: "CHANGE_ME"
+schema:
+  timezone: str
+  homeassistant_url: str
+  homeassistant_token: str
+
