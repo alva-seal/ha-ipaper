@@ -10,7 +10,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 COPY src ./src
 COPY config.yaml ./
-COPY docker/entrypoint.sh ./
+COPY entrypoint.sh ./
 
 # Install dependencies and make entrypoint executable
 RUN uv sync --frozen && chmod +x entrypoint.sh
